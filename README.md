@@ -1,7 +1,7 @@
 # 🤖 Wiki-Cyberpunk2077
 
 <div align="center">
-  <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python Version"/>
+  <img src="https://img.shields.io/badge/python-3.12+-blue.svg" alt="Python Version"/>
   <img src="https://img.shields.io/badge/FastAPI-0.105.0-009688.svg" alt="FastAPI Version"/>
   <img src="https://img.shields.io/badge/React-18.0.0-61DAFB.svg" alt="React Version"/>
   <img src="https://img.shields.io/badge/Tailwind-3.3.0-38B2AC.svg" alt="Tailwind Version"/>
@@ -45,7 +45,7 @@ flowchart LR
     end
     
     subgraph Backend
-        D[FastAPI] --- E[Python 3.11+]
+        D[FastAPI] --- E[Python 3.12+]
         E --- F[SQLAlchemy]
         F --- G[Pydantic]
     end
@@ -126,12 +126,11 @@ classDiagram
 git clone https://github.com/Amtilan/Wiki-Cyberpunk2077.git
 cd Wiki-Cyberpunk2077
 
-# Создать виртуальное окружение
-python -m venv venv
-source venv/bin/activate  # На Windows: venv\Scripts\activate
+# Установить зависимости с Poetry
+poetry install
 
-# Установить зависимости
-pip install -r requirements.txt
+# Активировать виртуальное окружение
+poetry shell
 
 # Запустить бэкенд
 cd backend
