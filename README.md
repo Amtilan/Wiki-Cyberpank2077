@@ -123,8 +123,8 @@ classDiagram
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/yourusername/Wiki-Cyberpank2077.git
-cd Wiki-Cyberpank2077
+git clone https://github.com/Amtilan/Wiki-Cyberpunk2077.git
+cd Wiki-Cyberpunk2077
 
 # Создать виртуальное окружение
 python -m venv venv
