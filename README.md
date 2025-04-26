@@ -96,7 +96,7 @@ flowchart LR
 classDiagram
     class API {
         GET /api/characters
-        GET /api/characters/{name}
+        GET /api/characters/name
         POST /api/chat
     }
     
