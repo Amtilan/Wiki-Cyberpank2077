@@ -26,7 +26,7 @@ graph TD
     A[Frontend: React + TailwindCSS] -->|API Requests| B[Backend: FastAPI]
     B -->|Database Queries| C[(Database: SQLite/PostgreSQL)]
     B -->|AI Chat Requests| D[OpenAI API]
-    E[User] -->|访问| A
+    E[User] --> A
     
     style A fill:#61DAFB,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#009688,stroke:#333,stroke-width:2px,color:#fff
